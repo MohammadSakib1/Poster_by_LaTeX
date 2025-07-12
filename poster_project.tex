@@ -1,0 +1,142 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0in]{geometry}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{fontawesome5}
+\usepackage{parskip}
+\usepackage{changepage}
+\usepackage{amssymb}
+
+
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Split the full page into two halves using minipages
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+    % Top Logo + Company Name (inline, adjusted vertical alignment)
+    \begin{minipage}[t]{0.4\textwidth}
+        \vspace{0.8em} % Move logo slightly down
+        \includegraphics[width=\linewidth]{logo.jpg}
+    \end{minipage}%
+    \begin{minipage}[t]{0.58\textwidth}
+        \vspace{7em} % Move company name slightly up
+        \raggedright
+        \textbf{\huge AL MUNEER} \\
+        \textbf{GENERAL TRADING L.L.C.}
+    \end{minipage}
+
+    \vspace{0.6em}
+
+    % Company Profile Box (left half only)
+    \begin{tcolorbox}[
+        colback=red!80!black, 
+        coltext=white, 
+        boxrule=0pt, 
+        arc=0mm, 
+        width=\textwidth,
+        height=7cm,
+        valign=center,
+        left=5mm, right=1mm, top=0.5mm, bottom=0.5mm
+    ]
+    
+   \textbf{%
+  \fontsize{40pt}{44pt}\selectfont
+  Company \\
+  \\
+  Profile\\[-0.5em]
+  \\
+  \rule{2cm}{2pt}  % Half underline under "Profile"
+}
+\\
+
+
+    \textbf{\Large Your Reliable Partner in Material 
+    \\Supply Solution}
+    \end{tcolorbox}
+
+    \vspace{0.6em}
+
+    % Our Services
+     \begin{adjustwidth}{2em}{0em} % Indent left
+    \textbf{\Huge Our Services} \\
+    \vspace{0.3em}
+    \footnotesize
+    \begin{itemize}[leftmargin=*, itemsep=0.2em]
+    \Large
+      \item Building Materials
+      \item Electrical Items \& Fittings
+      \item Sanitary Supplies
+      \item Spare Parts \& Accessories
+      \item Power Tools \& Hand Tools
+      \item Industrial Safety Equipment
+      \item Lubricants \& Batteries
+      \item Shop and Kitchen Decoration Materials
+      \item Storage Racks, Trolleys, \& Display Systems
+      \item MS, Gi \& SS Fittings, Wire Mesh, Pipe Systems
+    \end{itemize}
+    \end{adjustwidth}
+
+    \vspace{1em}
+
+    % Why Choose Us
+     \begin{adjustwidth}{2em}{0em} % Indent left
+    \textbf{\Huge Why Choose Us} \\
+    \vspace{0em}
+    \Large
+   \begin{itemize}[leftmargin=*, label=\checkmark, itemsep=0.2em]
+      \item Wide Range of Quality Products
+      \item Competitive Pricing
+      \item Fast and Reliable Delivery
+      \item Customer-Centric Approach
+      \item Located in a Strategic Industrial Hub
+    \end{itemize}
+    \end{adjustwidth}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+    \vspace{7em}
+    \begin{adjustwidth}{2em}{3em} % Add right margin
+    % About Us
+    \textbf{\Huge About Us} \\
+    \vspace{2em}
+    \Large
+    
+   Established in January 2024, Al Munner General Trading LLC is one of the leading supplier of a wide range of building material products. Serving both industrial and commercial sectors across the UAE. We are specialised in providing high quality Building Materials, electrical and sanitary materials, spare Parts, lubricants and batteries for cars and trucks, Power tools, safety equipments and much more. With a commitment of excellence, our company is build in values of trust, reliability and customer satisfaction.
+   \\
+   \\
+    Our mission is being a one stop solution for all kinds of building Materials.
+    Delivering Quality products with efficiency and competitive pricing.
+    \end{adjustwidth}
+    \vspace{0em}
+
+     \vspace{0pt}
+    \begin{center}
+    % Image (bottom, just above footer)
+    \includegraphics[width=8cm,height=10.8cm,keepaspectratio]{img.jpg}
+    \end{center}
+\end{minipage}
+
+
+% Footer (unchanged but half red, half ash)
+
+\noindent
+\makebox[\textwidth][c]{%
+  \colorbox{red!90!black}{\parbox[c][3em][c]{0.5\textwidth}{%
+    \centering
+    \textbf{\small \faPhone\ \ 050-5018194 / 056-8994436}%
+  }}%
+  \colorbox{gray!100}{\parbox[c][3em][c]{0.5\textwidth}{%
+    \centering
+    \textbf{\small \faEnvelope\ almuneertrd@gmail.com}%
+  }}%
+}
+
+\end{document}
